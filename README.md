@@ -1,56 +1,59 @@
+# Transliteration Engine
+
+This project provides scripts and programs to convert between English (Roman) and Marathi (Devanagari) text, as well as handle Unicode transformations.
 
 ----------------------------with flags uses-----------------------------------------------
 -i <inputfile>         inupt file for program
 -o <outputfile>        output file for program
 
 $./translit --r2d -i <inputfile> -o <outputfile> 
-	description- converts roman/ascii string to Devnagari text
-        ex   ./translit --r2d -i mix_input -o output
+description- converts roman/ascii string to Devnagari text
+ex   ./translit --r2d -i mix_input -o output
 
 
 
 
 $./translit --d2r -i <inputfile> -o <outputfile>
-	description- Devnagari text to roman/ascii string
-        ex   ./translit --d2r -i pune.txt -o output
+description- Devnagari text to roman/ascii string
+ex   ./translit --d2r -i pune.txt -o output
 --------------------------------without flags uses-----------------------------------------
 
 ./mar_to_eng.sh <input_file>        
-	description- input_file -must be in marathi text      
-        ex   ./mar_to_eng.sh all_marathi_words.txt
+description- input_file -must be in marathi text      
+ex   ./mar_to_eng.sh all_marathi_words.txt
         
         
         
         
 ./eng_to_mar.sh <input_file>         
-	description- nput_file -should be in english text                   
-    ex.  ./eng_to_mar.sh  new > new2
+description- nput_file -should be in english text                   
+ex.  ./eng_to_mar.sh  new > new2
 
 
 
 
 ./unicode.sh <input_file>           
-	description- input_file -should be in english text           
-             ex.  ./unicode.sh new
+description- input_file -should be in english text           
+ex.  ./unicode.sh new
 
 
  
 awk -f unicode2.awk <input_file>    
-	description- input_file - should be in english text            
-           ex.   awk -f unicode2.awk new
+description- input_file - should be in english text            
+ex.   awk -f unicode2.awk new
 
 
 
 ./uni_to_eng.sh <input_file>      
-	description- input_file- should contains english codes            
-          ex.   ./uni_to_eng.sh new
+description- input_file- should contains english codes            
+ex.   ./uni_to_eng.sh new
 
 
 
 
 
 
------------------------------------Input files to use----------------------------------------------
+----------------------------Input files to use----------------------
 input - contains normal words as input
 
 mix_input    - contains all the input text with normal words and jodakshars
@@ -68,7 +71,7 @@ all_marathi_words.txt - contains all aprox 19000 words in marathi
 
 
 
------------------------------------------------------------------------Files used for logic---------------------------------------------------------------------------------------------------------
+-----------------Files used for logic------------------------------------
 
 trns_p  - converts given strings' characters into decimal equivalent Unicode 
 
