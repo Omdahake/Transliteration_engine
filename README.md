@@ -17,6 +17,7 @@ ex   ./translit --r2d -i mix_input -o output
 $./translit --d2r -i <inputfile> -o <outputfile>
 description- Devnagari text to roman/ascii string
 ex   ./translit --d2r -i pune.txt -o output
+
 --------------------------------without flags uses-----------------------------------------
 
 ./mar_to_eng.sh <input_file>        
