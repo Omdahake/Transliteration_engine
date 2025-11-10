@@ -3,6 +3,7 @@
 This project provides scripts and programs to convert between English (Roman) and Marathi (Devanagari) text, as well as handle Unicode transformations.
 
 ----------------------------with flags uses-----------------------------------------------
+
 -i <inputfile>         inupt file for program
 -o <outputfile>        output file for program
 
@@ -54,6 +55,7 @@ ex.   ./uni_to_eng.sh new
 
 
 ----------------------------Input files to use----------------------
+
 input - contains normal words as input
 
 mix_input    - contains all the input text with normal words and jodakshars
